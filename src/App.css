@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.header img {
+  width: 175px;
+  border-radius: 10px;
+}
+
+.main {
+  width: 600px;
+}
+
+.about_me p:last-child {
+  margin-top: -2px;
+}
+
+.about_me img {
+  width: 25px;
+}
+

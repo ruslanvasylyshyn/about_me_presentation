@@ -1,0 +1,16 @@
+{
+  "name": "Руслан",
+  "about_me": [
+    "Цікавлюсь Front-End розробкою.",
+    "Трохи вмію в HTML, CSS, SCSS, JS і React.",
+    "В планах, структурувати знання і краще розібратись з React, Redux ",
+    ", TypeScript і знайти роботу."
+  ],
+  "experience": [
+    "Досвід роботи:",
+    "Junior Front-End розробник",
+    "Account/Project manager",
+    "Аналітик"
+  ],
+  "hobby": ["Хоббі:", "Колекціоную монети"]
+}
