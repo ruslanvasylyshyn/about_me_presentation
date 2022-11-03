@@ -4,6 +4,7 @@ import my_photo from "./img/my_photo.jpg";
 import mem from "./img/mem.jpg";
 
 function App() {
+  const aboutList = ruslan.about_me.filter((about, i) => i < 3);
   return (
     <main className="App">
       <header className="header">
@@ -15,25 +16,29 @@ function App() {
       </header>
       <main className="main">
         <section className="about_me">
-          <p>{ruslan.about_me[0]}</p>
-          <p>{ruslan.about_me[1]}</p>
-          <p>
-            {ruslan.about_me[2]}
+          <ul>
+            {aboutList.map((about) => {
+              return <li key={about}>{about}</li>;
+            })}
             <img src={mem} alt="мем" />
             {ruslan.about_me[3]}
-          </p>
+          </ul>
         </section>
 
         <section className="experience">
-          <h4>{ruslan.experience[0]}</h4>
-          <p>{ruslan.experience[1]}</p>
-          <p>{ruslan.experience[2]}</p>
-          <p>{ruslan.experience[3]}</p>
+          <ul>
+            {ruslan.experience.map((exp) => (
+              <li key={exp}>{exp}</li>
+            ))}
+          </ul>
         </section>
 
         <section className="hobby">
-          <h4>{ruslan.hobby[0]}</h4>
-          <p>{ruslan.hobby[1]}</p>
+          <ul>
+            {ruslan.hobby.map((hobby) => (
+              <li key={hobby}>{hobby}</li>
+            ))}
+          </ul>
         </section>
       </main>
     </main>

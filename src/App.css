@@ -3,9 +3,20 @@
   margin: 0 auto;
 }
 
-
 .read-the-docs {
   color: #888;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+ul li:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -24,11 +35,12 @@
   width: 600px;
 }
 
-.about_me p:last-child {
-  margin-top: -2px;
+.about_me li:nth-child(3) {
+  display: inline-block;
 }
 
 .about_me img {
   width: 25px;
+  margin-left: 5px;
+  margin-top: -10px;
 }
-
